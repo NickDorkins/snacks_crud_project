@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% comment %} snack_update.html  {% endcomment %}
+{% comment %} says it should be snack_form.html  {% endcomment %}
+
+{% block content %}
+<h1>Update</h1>
+
+
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="SAVE">
+</form>
+
+
+{% endblock content %}

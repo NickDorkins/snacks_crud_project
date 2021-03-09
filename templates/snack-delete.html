@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% comment %} snack_delete.html  {% endcomment %}
+{% comment %} says it should be snack_confirm_delete.html  {% endcomment %}
+
+{% block content %}
+
+    <h1>Delete Stuff</h1>
+
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p> Really? You want to delete "{{ snack.title }}"?</p>
+        <input type="submit" value="OK">
+    </form>
+
+
+{% endblock content %}
