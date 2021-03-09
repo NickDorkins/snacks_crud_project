@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "snacks_crud_project"
+name = "snacks-crud"
 version = "0.1.0"
 description = ""
 authors = ["NickDorkins <nick.dorkins@gmail.com>"]
